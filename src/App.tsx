@@ -1,9 +1,34 @@
-import Navbar from "./Components/Navbar"
+import Navbar from "./components/Navbar"
 import Coding from "../src/assets/Icons/coding.svg"
 import Github from "../src/assets/Icons/github.svg"
 import LinkedIn from "../src/assets/Icons/linkedin.svg"
 import Mail from "../src/assets/Icons/mail.svg"
 import X from "../src/assets/Icons/x.svg"
+import { FloatingDock } from "./components/ui/floating-dock"
+
+const allLinks = [
+  {
+    title: "Github",
+    icon: <img src={Github} alt="github" />,
+    href: "https://github.com/Prajwal-17",
+  },
+  {
+    title: "Linkedin",
+    icon: <img src={LinkedIn} alt="linkedin" />,
+    href: "https://www.linkedin.com/in/prajwal-k-836632264/",
+  },
+  {
+    title: "Mail",
+    icon: <img src={Mail} alt="mail" />,
+    href: "google.com",
+  },
+  {
+    title: "X",
+    icon: <img src={X} alt="x" />,
+    href: "https://x.com/Prajwal__17__"
+  }
+];
+
 
 const App = () => {
   return (
@@ -12,7 +37,7 @@ const App = () => {
       <Navbar />
 
       <div>
-        <div className="  mx-32 px-10 font-hind h-[calc(100vh-10rem)] flex flex-col justify-center items-center space-y-10">
+        <div className="  mx-32 px-10 font-hind h-[calc(100vh-10rem)] flex flex-col justify-center items-center space-y-7">
           <div className="w-full text-center text-3xl">
             Hello , I'm
           </div>
@@ -25,22 +50,7 @@ const App = () => {
           <div className="h-20 w-32">
             <img src={Coding} />
           </div>
-          <div className="">
-            <div className="flex justify-center items-centers gap-5 bg-neutral-200/60 px-4 py-4 rounded-3xl">
-              <a href="" className="hover:cursor-pointer ">
-                <img src={Github} alt="" className="size-7  text-neutral-500" />
-              </a>
-              <a href="" className="hover:cursor-pointer">
-                <img src={Mail} alt="" className="size-7" />
-              </a>
-              <a href="" className="hover:cursor-pointer">
-                <img src={X} alt="" className="size-7" />
-              </a>
-              <a href="" className="hover:cursor-pointer">
-                <img src={LinkedIn} alt="" className="size-7" />
-              </a>
-            </div>
-          </div>
+        <FloatingDock items={allLinks} />
         </div>
       </div>
 

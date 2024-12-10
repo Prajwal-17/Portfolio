@@ -23,8 +23,8 @@ const Navbar = () => {
             className="size-6 transition duration-1000 ease-in"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M6 18L18 6M6 6l12 12"
             />
           </svg>
@@ -37,7 +37,7 @@ const Navbar = () => {
             stroke="currentColor"
             className="size-6 transition duration-1000 ease-in"
           >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
           </svg>
         )}
       </div>
