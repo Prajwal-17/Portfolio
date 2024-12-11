@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily:{
       hind:["Hind","sans-serif"],
-      epilogue:["Eplilogue","sans-serif"],
+      epilogue:["Epilogue","sans-serif"],
       motterdam:["Motterdam","sans-serif"]
       }
     },

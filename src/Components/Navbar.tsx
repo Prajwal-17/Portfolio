@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
     <section className="mx-32 px-7 py-9 flex justify-between">
-      <div className="font-motterdam text-3xl font-extralight">
+      <a href="/" className="font-motterdam text-3xl font-extralight">
         Prajwal
-      </div>
+      </a>
       <div onClick={handleMenuOpen}>
         {menuOpen ? (
           <svg
